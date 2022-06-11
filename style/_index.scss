@@ -1,0 +1,163 @@
+body{
+    background: #112B3C;
+    color:black;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+
+.contenedor {
+    width: 100%;
+    max-width: 1800px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header "
+                         "contenido contenido contenido"
+                         "widget-1 widget-1 widget-2 "
+                         "sidebar sidebar sidebar"
+                         "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar, 
+.contenedor .footer {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header{
+    background: #F66B0E;
+    color: #faebd7;
+    grid-area: header;
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.contenedor .contenido {
+    background: #EFEFEF;
+    grid-area: contenido;
+    font-size: 25px;
+    border-image-width: 10px;
+    
+}
+.text-index-quote{
+    font-size: x-large;
+
+}
+.titles-index{
+    font-weight: bolder;
+}
+.educationphoto1{
+    
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1800px;
+ 
+    
+}
+/*nose como poner la imagen centrada */
+.educationphoto1{
+
+    width: 100%;
+    justify-content: center;
+    
+}
+.image-reasons{
+    display: grid;
+    justify-content: center;
+    width: 70%;
+}
+.contenedor .sidebar {
+    grid-column: 3 / 4;
+    background: #205375;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: sidebar;
+
+    /*no se como acomodar las imagenes y poner texto debajos de ellas*/
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+    background: #55a8fd;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor .widget-1 {
+    grid-area: widget-1;
+    list-style: none;
+    text-decoration: none;
+}
+.widget-list{
+    color: #EFEFEF;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bolder;
+    font-size:xx-large;
+}
+.widget-text{
+    text-decoration: none;
+    color: black;
+}
+
+.widget-1:hover{
+    transform: scale(1.2);
+}
+.widget-1{
+    transition-property: all;
+    transition-duration: 1s;
+}
+.widget-2:hover{
+    transform: scale(1.2);
+}
+.widget-2{
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+
+.contenedor .widget-2{
+    grid-area: widget-2;
+    
+}
+.contenedor .footer{
+    background: #F66B0E;
+    grid-area: footer;
+    justify-content: right;
+    text-align: right;
+    list-style: none;
+}
+.support-text{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor{
+        grid-template-areas: "header header header"
+                         "contenido contenido contenido"
+                         "widget-1  widget-1 widget-2 "
+                         "sidebar sidebar sidebar"
+                         "footer footer footer";
+    }
+}
+

@@ -20,12 +20,8 @@ body {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (auto)[4];
-      grid-template-rows: repeat(4, auto); 
-      grid-template-areas: "header header header "
- "contenido contenido contenido"
- "widget-1 widget-1 widget-2"
- "sidebar sidebar sidebar"
- "footer footer footer";
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "header header header " "contenido contenido contenido" "widget-1 widget-1 widget-2 " "sidebar sidebar sidebar" "footer footer footer";
 }
 
 .contenedor > div,
@@ -215,11 +211,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .contenedor {
-        grid-template-areas: "header header header"
- "contenido contenido contenido"
- "widget-1  widget-1 widget-2 "
- "sidebar sidebar sidebar"
- "footer footer footer";
+        grid-template-areas: "header header header" "contenido contenido contenido" "widget-1  widget-1 widget-2 " "sidebar sidebar sidebar" "footer footer footer";
   }
 }
 
@@ -272,10 +264,7 @@ body {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
-      grid-template-areas: "header header header "
- "gridsection gridsection gridsection"
- "gridsection gridsection gridsection"
- "footer footer footer";
+      grid-template-areas: "header header header " "gridsection gridsection gridsection" "gridsection gridsection gridsection" "footer footer footer";
 }
 
 .header-product {
