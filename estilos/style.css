@@ -17,11 +17,13 @@ body {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
-      grid-template-areas: "header header header " "contenido contenido contenido" "widget-1 widget-1 widget-2 " "sidebar sidebar sidebar" "footer footer footer";
+      grid-template-areas: "header header header "
+ "contenido contenido contenido"
+ "widget-1 widget-1 widget-2 "
+ "sidebar sidebar sidebar"
+ "footer footer footer";
 }
 
 .contenedor > div,
@@ -37,9 +39,6 @@ body {
 .contenedor .header {
   background: #F66B0E;
   color: #faebd7;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: header;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,8 +53,6 @@ body {
 
 .contenedor .contenido {
   background: #EFEFEF;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: contenido;
   font-size: 25px;
@@ -113,7 +110,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100px;
-  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: sidebar;
@@ -138,9 +134,6 @@ body {
 }
 
 .contenedor .widget-1 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: widget-1;
   list-style: none;
   text-decoration: none;
@@ -184,15 +177,11 @@ body {
 }
 
 .contenedor .widget-2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
   grid-area: widget-2;
 }
 
 .contenedor .footer {
   background: #F66B0E;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
   -webkit-box-pack: right;
@@ -211,7 +200,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .contenedor {
-        grid-template-areas: "header header header" "contenido contenido contenido" "widget-1  widget-1 widget-2 " "sidebar sidebar sidebar" "footer footer footer";
+        grid-template-areas: "header header header"
+ "contenido contenido contenido"
+ "widget-1  widget-1 widget-2 "
+ "sidebar sidebar sidebar"
+ "footer footer footer";
   }
 }
 
@@ -253,25 +246,11 @@ body {
   font-size: 30px;
 }
 
-.contenedor-product {
-  width: 100%;
-  max-width: 1800px;
-  margin: 20px auto;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (auto)[4];
-      grid-template-rows: repeat(4, auto);
-      grid-template-areas: "header header header " "gridsection gridsection gridsection" "gridsection gridsection gridsection" "footer footer footer";
-}
+
 
 .header-product {
   background: #F66B0E;
   color: #faebd7;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: header;
   display: -webkit-box;
