@@ -1,0 +1,48 @@
+.contenido-experiences{
+    display: flex;
+    justify-content: left;
+    flex-wrap:wrap;
+    column-gap: 100px;
+    
+}
+.person-1-experiences{
+    align-content: center ;
+    
+
+}
+.person-2-experiences{
+    align-content: center;
+    
+}
+.footer-experiences{
+    background: #F66B0E;
+    border-radius: 15px;
+    border:#F66B0E;
+    width: 1900px;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    list-style-type: circle;
+    grid-area: footer-experiences;
+    
+}
+.list-footer-exp{
+    font-size: x-large;
+    color:#F66B0E;
+    width: 1800px;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    text-align: right;
+}
+.support-text-exp{
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    display: grid;
+    justify-content: center;
+    text-align: right;
+    
+}
