@@ -15,7 +15,11 @@ body {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
-      grid-template-areas: "header header header " "contenido contenido contenido" "widget-1 widget-1 widget-2 " "sidebar sidebar sidebar" "footer footer footer";
+      grid-template-areas: "header header header "
+ "contenido contenido contenido"
+ "widget-1 widget-1 widget-2 "
+ "sidebar sidebar sidebar"
+ "footer footer footer";
 }
 
 .contenedor > div,
@@ -205,7 +209,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .contenedor {
-        grid-template-areas: "header header header" "contenido contenido contenido" "widget-1  widget-1 widget-2 " "sidebar sidebar sidebar" "footer footer footer";
+        grid-template-areas: "header header header"
+ "contenido contenido contenido"
+ "widget-1  widget-1 widget-2 "
+ "sidebar sidebar sidebar"
+ "footer footer footer";
   }
 }
 
@@ -257,7 +265,10 @@ body {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
-      grid-template-areas: "header header header " "gridsection gridsection gridsection" "gridsection gridsection gridsection" "footer footer footer";
+      grid-template-areas: "header header header "
+ "gridsection gridsection gridsection"
+ "gridsection gridsection gridsection"
+ "footer footer footer";
 }
 
 .header-product {
@@ -359,10 +370,10 @@ header nav ul li a {
 
 .footer-experiences {
   background: #F66B0E;
-  border-radius: 15px;
+  border-radius: 8px;
   border: #F66B0E;
   width: 1900px;
-  height: 100px;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
