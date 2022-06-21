@@ -1,5 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
 body {
-  background: #112B3C;
+  background: #f0e7de;
   color: black;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -27,14 +34,13 @@ body {
 .contenedor .contenido,
 .contenedor .sidebar,
 .contenedor .footer {
-  background: white;
+  background: #f0e7de;
   padding: 20px;
   border-radius: 4px;
 }
 
 .contenedor .header {
-  background: #F66B0E;
-  color: #faebd7;
+  color: #000000;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -46,12 +52,11 @@ body {
       -ms-flex-pack: right;
           justify-content: right;
   text-decoration: none;
-  font-size: larger;
-  font-family: 'Josefin Sans', sans-serif;
+  
 }
 
 .contenedor .contenido {
-  background: #EFEFEF;
+  background: #e2caae;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -120,7 +125,7 @@ body {
 
 .contenedor .widget-1,
 .contenedor .widget-2 {
-  background: #55a8fd;
+  background: #e97415;
   color: #fff;
   height: 100px;
   text-align: center;
@@ -216,6 +221,11 @@ body {
  "footer footer footer";
   }
 }
+
+
+
+
+/*product */
 
 .section-icons {
   width: 90%;
@@ -372,7 +382,7 @@ header nav ul li a {
   background: #F66B0E;
   border-radius: 8px;
   border: #F66B0E;
-  width: 1900px;
+  width: 19000px;
   height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -2,7 +2,7 @@
 
 
 body{
-    background: #112B3C;
+    background: #ffffff;
     color:black;
     font-family: 'Josefin Sans', sans-serif; 
 }
@@ -40,13 +40,12 @@ body{
     display: flex;
     justify-content: right;
     text-decoration: none;
-    font-size: larger;
-    font-family: 'Josefin Sans', sans-serif;
+    
 
 }
 
 .contenedor .contenido {
-    background: #EFEFEF;
+    background: #ffc4c4;
     grid-area: contenido;
     font-size: 25px;
     border-image-width: 10px;

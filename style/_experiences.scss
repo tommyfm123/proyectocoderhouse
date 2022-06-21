@@ -12,10 +12,9 @@
     list-style-type: circle;
 }
 .list-footer-exp{
-    font-size: x-large;
-    color:#F66B0E;
-    width: 900px;
-    height: 50px;
-    display: grid;
-    justify-content: center;
-    text-align: right;
+        background: #F66B0E;
+        grid-area: footer;
+        justify-content: right;
+        text-align: right;
+        list-style: none;
+}
