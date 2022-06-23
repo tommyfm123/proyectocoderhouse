@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 80px;
-    color: antiquewhite;
+    color: rgb(0, 0, 0);
 }
 
 .product-text{
@@ -62,7 +62,7 @@ header nav ul li a {
     font-size: 30px;
 }
 .main-section{
-    background: antiquewhite;
+    background: rgb(0, 0, 0);
     width: 1700px;
     height: 950px;
     border-radius: 20px;
@@ -74,12 +74,17 @@ header nav ul li a {
 }
 
 .contenido-product{
-    color: antiquewhite;
+    
+    color: rgb(0, 0, 0);
     font-weight: bolder;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1700px;
 }
 
 #footer-product{
-    background: #F66B0E;
+    
     text-decoration: none;
     align-items: center;
 
@@ -92,3 +97,4 @@ header nav ul li a {
     transition-property: all;
     transition-duration: 1s;
 }
+

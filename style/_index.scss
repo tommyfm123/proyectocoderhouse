@@ -1,8 +1,7 @@
 
 
-
 body{
-    background: #ffffff;
+    background: #233142;
     color:black;
     font-family: 'Josefin Sans', sans-serif; 
 }
@@ -21,21 +20,21 @@ body{
                          "contenido contenido contenido"
                          "widget-1 widget-1 widget-2 "
                          "sidebar sidebar sidebar"
-                         "footer footer footer";
+                         "footer-general footer-general footer-general";
 }
 
 .contenedor > div,
 .contenedor .header,
 .contenedor .contenido,
 .contenedor .sidebar, 
-.contenedor .footer {
-    background: white;
+.contenedor .footer-general {
+    background: rgb(247, 242, 242);
     padding: 20px;
-    border-radius: 4px;
+    border-radius: 30px;
 }
 
 .contenedor .header{
-    color: #faebd7;
+    background-color:  #e3e3e3;
     grid-area: header;
     display: flex;
     justify-content: right;
@@ -45,10 +44,11 @@ body{
 }
 
 .contenedor .contenido {
-    background: #ffc4c4;
+    background: #455d7a;
     grid-area: contenido;
     font-size: 25px;
     border-image-width: 10px;
+    color: white;
     
 }
 .text-index-quote{
@@ -82,7 +82,7 @@ body{
 
 .contenedor .sidebar {
     grid-column: 3 / 4;
-    background: #205375;
+    background: #FF6A3D;
     text-align: center;
     display: flex;
     align-items: center;
@@ -95,8 +95,7 @@ body{
 
 .contenedor .widget-1,
 .contenedor .widget-2 {
-    background: #55a8fd;
-    color: #fff;
+    background:  #f95959;
     height: 100px;
     text-align: center;
     display: flex;
@@ -107,6 +106,7 @@ body{
     grid-area: widget-1;
     list-style: none;
     text-decoration: none;
+
 }
 .widget-list{
     color: #EFEFEF;
@@ -138,13 +138,14 @@ body{
 }
 
 
+
 .contenedor .widget-2{
     grid-area: widget-2;
     
 }
-.contenedor .footer{
-    background: #F66B0E;
-    grid-area: footer;
+.contenedor .footer-general{
+  
+    grid-area: footer-general;
     justify-content: right;
     text-align: right;
     list-style: none;
@@ -162,7 +163,7 @@ body{
                          "contenido contenido contenido"
                          "widget-1  widget-1 widget-2 "
                          "sidebar sidebar sidebar"
-                         "footer footer footer";
+                         "footer-general footer-general footer-general";
     }
 }
 
