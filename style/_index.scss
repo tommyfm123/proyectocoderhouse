@@ -6,8 +6,6 @@ body{
     font-family: 'Josefin Sans', sans-serif; 
 }
 
-
-
 .contenedor {
     width: 100%;
     max-width: 1800px;
@@ -16,6 +14,7 @@ body{
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
+    
 
     grid-template-areas: "header header header "
                          "contenido contenido contenido"
@@ -32,6 +31,8 @@ body{
     background: rgb(247, 242, 242);
     padding: 20px;
     border-radius: 30px;
+    
+    
 }
 
 .contenedor .header{
@@ -50,6 +51,7 @@ body{
     font-size: 25px;
     border-image-width: 10px;
     color: white;
+
     
 }
 .text-index-quote{

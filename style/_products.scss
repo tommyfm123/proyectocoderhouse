@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 80px;
-    color: rgb(0, 0, 0);
+    color: rgb(253, 249, 249);
 }
 
 .product-text{
@@ -19,8 +19,9 @@
     justify-content: center;
     width: 250px;
     font-size: 30px;
-
+    
 }
+
 .contenedor-product {
     width: 100%;
     max-width: 1800px;
@@ -62,7 +63,7 @@ header nav ul li a {
     font-size: 30px;
 }
 .main-section{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     width: 1700px;
     height: 950px;
     border-radius: 20px;
@@ -75,7 +76,7 @@ header nav ul li a {
 
 .contenido-product{
     
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
     display: grid;
     align-items: center;
@@ -83,13 +84,7 @@ header nav ul li a {
     grid-template-columns: 1700px;
 }
 
-#footer-product{
-    
-    text-decoration: none;
-    align-items: center;
 
-
-}
 .image-product:hover{
     transform: scale(1.2);
 }
@@ -97,4 +92,5 @@ header nav ul li a {
     transition-property: all;
     transition-duration: 1s;
 }
+
 

@@ -15,14 +15,14 @@ body {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
-      grid-template-areas: "header header header " "contenido contenido contenido" "widget-1 widget-1 widget-2 " "sidebar sidebar sidebar" "footer-general footer-general footer-general";
+      grid-template-areas: "header header header "
+ "contenido contenido contenido"
+ "widget-1 widget-1 widget-2 "
+ "sidebar sidebar sidebar"
+ "footer-general footer-general footer-general";
 }
 
-.contenedor > div,
-.contenedor .header,
-.contenedor .contenido,
-.contenedor .sidebar,
-.contenedor .footer-general {
+.footer-general {
   background: #f7f2f2;
   padding: 20px;
   border-radius: 30px;
@@ -201,7 +201,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .contenedor {
-        grid-template-areas: "header header header" "contenido contenido contenido" "widget-1  widget-1 widget-2 " "sidebar sidebar sidebar" "footer-general footer-general footer-general";
+        grid-template-areas: "header header header"
+ "contenido contenido contenido"
+ "widget-1  widget-1 widget-2 "
+ "sidebar sidebar sidebar"
+ "footer-general footer-general footer-general";
   }
 }
 
@@ -240,6 +244,7 @@ body {
           justify-content: center;
   width: 250px;
   font-size: 30px;
+  color: antiquewhite;
 }
 
 .contenedor-product {
@@ -253,7 +258,10 @@ body {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
-      grid-template-areas: "header header header " "gridsection gridsection gridsection" "gridsection gridsection gridsection" "footer footer footer";
+      grid-template-areas: "header header header "
+ "gridsection gridsection gridsection"
+ "gridsection gridsection gridsection"
+ "footer footer footer";
 }
 
 .header-product {
@@ -306,7 +314,7 @@ header nav ul li a {
 }
 
 .contenido-product {
-  color: black;
+  color: antiquewhite;
   font-weight: bolder;
   display: -ms-grid;
   display: grid;
@@ -320,12 +328,7 @@ header nav ul li a {
       grid-template-columns: 1700px;
 }
 
-#footer-product {
-  text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+
 
 .image-product:hover {
   -webkit-transform: scale(1.2);
