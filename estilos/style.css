@@ -15,11 +15,17 @@ body {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
-      grid-template-areas: "header header header "
- "contenido contenido contenido"
- "widget-1 widget-1 widget-2 "
- "sidebar sidebar sidebar"
- "footer-general footer-general footer-general";
+      grid-template-areas: "header header header " "contenido contenido contenido" "widget-1 widget-1 widget-2 " "sidebar sidebar sidebar" "footer-general footer-general footer-general";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer-general {
+  background: #f7f2f2;
+  padding: 20px;
+  border-radius: 30px;
 }
 
 .footer-general {
@@ -201,16 +207,24 @@ body {
 
 @media screen and (max-width: 768px) {
   .contenedor {
-        grid-template-areas: "header header header"
- "contenido contenido contenido"
- "widget-1  widget-1 widget-2 "
- "sidebar sidebar sidebar"
- "footer-general footer-general footer-general";
+        grid-template-areas: "header header header" "contenido contenido contenido" "widget-1  widget-1 widget-2 " "sidebar sidebar sidebar" "footer-general footer-general footer-general";
   }
 }
 
+.social-foot {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.social-foot:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .section-icons {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -228,7 +242,7 @@ body {
       flex-wrap: wrap;
   -webkit-column-gap: 80px;
           column-gap: 80px;
-  color: black;
+  color: #fdf9f9;
 }
 
 .product-text {
@@ -244,7 +258,6 @@ body {
           justify-content: center;
   width: 250px;
   font-size: 30px;
-  color: antiquewhite;
 }
 
 .contenedor-product {
@@ -258,10 +271,7 @@ body {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
-      grid-template-areas: "header header header "
- "gridsection gridsection gridsection"
- "gridsection gridsection gridsection"
- "footer footer footer";
+      grid-template-areas: "header header header " "gridsection gridsection gridsection" "gridsection gridsection gridsection" "footer footer footer";
 }
 
 .header-product {
@@ -298,7 +308,7 @@ header nav ul li a {
 }
 
 .main-section {
-  background: black;
+  background: white;
   width: 1700px;
   height: 950px;
   border-radius: 20px;
@@ -314,7 +324,7 @@ header nav ul li a {
 }
 
 .contenido-product {
-  color: antiquewhite;
+  color: white;
   font-weight: bolder;
   display: -ms-grid;
   display: grid;
@@ -327,8 +337,6 @@ header nav ul li a {
   -ms-grid-columns: 1700px;
       grid-template-columns: 1700px;
 }
-
-
 
 .image-product:hover {
   -webkit-transform: scale(1.2);
@@ -400,6 +408,11 @@ header nav ul li a {
       flex-wrap: wrap;
   -webkit-column-gap: 100px;
           column-gap: 100px;
+}
+
+.form-support {
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* mapas */
